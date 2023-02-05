@@ -1,0 +1,149 @@
+@import url("equipo.css");
+@import url("footer.css");
+/* 
+FUENTES DE LETRAS DE GOOGLE FONTS
+
+font-family: 'Hind Siliguri', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nanum Gothic', sans-serif;
+*/
+
+* {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+} 
+/* diseño para el menu */
+nav {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px -49px 36px -28px inset;
+  
+ }
+.enlace {
+  position: absolute;
+  padding: 10px 30px;
+}
+.logo {
+  height: 60px;
+}
+nav ul {
+  float: right;
+  margin-right: 30px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+nav ul li a {
+  letter-spacing: 3px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  padding: 7px 10px;
+  font-family: 'Merriweather', serif;
+}
+li a:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  transition: .5s;
+  border-radius: 2px;
+}
+.menu {
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  color: rgb(0, 0, 0);
+}
+#check {
+  display: none;
+}
+.fondo1{
+  height: 600px;
+  background-image: url(/IMG/fondo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 38px, rgba(0, 0, 0, 0.4) 0px 30px 12px;
+ }
+  .titulo {
+  padding: 15px;
+   font-size: 5em;
+   color: aliceblue;
+   letter-spacing: 20px;
+   border: solid 1.5px #FFF;
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -60%);
+   font-family: 'Nanum Gothic', sans-serif;
+
+}
+/* resposive del menu */
+@media (max-width: 950px) {
+  .titulo {
+    font-size: 38px;
+    letter-spacing: 15px;
+  }
+  .enlace {
+    padding-left: 20px;
+  }
+  nav ul li a {
+    font-size: 14px;
+    margin-right: 0px;
+  }
+  nav ul li {
+    margin: 0 0px;
+  }
+
+}
+@media (max-width: 750px){
+  .titulo {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  .menu {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 50%;
+    height: 600px;
+    background: rgb(0, 0, 0, 0.5);
+    top: 80px;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 0 8px;
+    line-height: 30px;
+
+    
+  }
+  nav ul li a {
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+  }
+  li a:hover {
+    background: none;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+  }
+  #check:checked ~ ul{
+    right: -29px;
+  }
+}
+
+
+
+
+

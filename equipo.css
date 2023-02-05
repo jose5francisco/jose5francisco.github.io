@@ -1,0 +1,87 @@
+/* 
+FUENTES DE LETRAS DE GOOGLE FONTS
+
+font-family: 'Hind Siliguri', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Nanum Gothic', sans-serif;
+*/
+
+.titulo2{
+    margin-top: 4em;
+    text-align: center;
+    padding: 10px;
+    font-size: 35px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.nombre {
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+.text {
+    /* border: solid 1px #000; */
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#equipo {
+    text-align: center;
+    align-items: center;
+    /* border: solid 2px #000; */
+    min-height: calc(190vh - 10px - 10px);
+}
+div.integrantes {
+    margin: 10px 20px;
+    width: 300px;
+    float: left;
+    
+}
+div.integrantes img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    object-fit: cover;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.integrantes img:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 38px, rgba(0, 0, 0, 0.4) 0px 30px 12px;
+}
+div.pie {
+    text-align: justify;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Nanum Gothic', sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+@media (max-width: 950px){
+    .titulo2 {
+        font-size: 25px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    div.integrantes {
+        width: 270px;
+    }
+}
+@media (max-width: 750px){
+    .titulo2 {
+        font-size: 18px;
+    }
+    .text {
+        font-size: 15px;
+    }
+    div.integrantes {
+        width: 250px;
+    }
+}
